@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <title>Bootstrap Denemesi</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <span class="logo float-left">
+            <a href="#" class="navbar-brand text-white">Yazılım Atölyesi</a>
+           
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="navbar-collapse collapse justify-content-end mr-5" id="collapsibleNavbar">
+            <ul class="navbar-nav float-right">
+                <li class="nav-item"><a href="#" class="nav-link text-white active">Anasayfa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Web Programlama</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Masaüstü Programlama</a></li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">Mobil Programlama</a>
+                        <div class="dropdown-menu bg-dark">
+                            <ul>
+                                <li class="dropdown-item bg-dark"><a href="#" class="text-white">iOS</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li class="dropdown-item bg-dark"><a href="#" class="text-white">Android</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row container mx-auto mt-3 shadow">
+        <div class="col-lg-8 col-sm-12 my-2"><img src="img/kodlama.jpg" class="img-fluid"></div>
+        <div class="col-lg-4 col-sm-12">
+                <h2>Yazılım</h2>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button type="button" class="btn btn-danger mb-3">Neden?</button>
+        </div>
+        
+    </div>
+
+    <div class="container mx-auto mt-3 shadow" id="flex">
+        <div class="sidebar">
+            <div class="box">
+                <img src="img/dikdortgen.jpg" alt="">
+                <h4>Diktörtgen</h4>
+                <p>a: Uzun kenar | b: Kısa kenar</p>
+                <p><b>Alan: </b> a.b</p>
+                <p><b>Çevre: </b> 2.(a+b)</p>
+                <br><hr><br>
+                <img src="img/ucgen.jpg" alt="">
+                <h4>Üçgen</h4>
+                <p>a: Uzun kenar | h: Yükseklik</p>
+                <p><b>Alan: </b> (a.h)/2</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="box">
+                <h2><b>Dikdörtgen Hesaplama Aracı</b></h2><br>
+                <div class="dort-genn">
+                    <p class="d-inline"><b> Alan: </b></p><p class="alan d-inline">NaN</p><br>
+                    <p class="d-inline"><b> Çevre: </b></p><p class="cevre d-inline">NaN</p><br>
+                    <p>Dikdörtgeninizin şekli;</p>
+                </div>
+                <div id="dortgen" class="my-4">
+                    
+                </div>
+                <div class="input-group shadow form">
+                    <span class="input-group-text"><h5>A köşesinin uzunluğunu giriniz: </h5></span>
+                    <input type="text" placeholder="Ör: 6.55" class="text form-control" id="akose" style="height: 50px;">
+                </div>
+                <div class="input-group shadow form mt-2">
+                    <span class="input-group-text"><h5>B köşesinin uzunluğunu giriniz: </h5></span>
+                    <input type="text" placeholder="Ör: 10.19" class="text form-control" id="bkose" style="height: 50px;">
+                </div>
+                <button class="btn btn-primary w-100 mt-2">Hesapla</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark container-fluid mt-5 text-white">
+        <p class="footter"> Copyright © 2021. Emirhan Taşçı <a href="instagram.com/teknobol"> TeknoBol</a></p>
+    </footer>
+
+
+
+    <script src="script/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
